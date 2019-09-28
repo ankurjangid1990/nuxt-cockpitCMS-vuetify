@@ -1,0 +1,27 @@
+{
+  "name": "cockpit-nuxt-components",
+  "version": "1.0.0",
+  "description": "cockpit-nuxt-components",
+  "author": "Frontend-with-Headless-CMS",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.0.0",
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.9.2"
+  },
+  "devDependencies": {
+    "@mdi/font": "^4.4.95",
+    "collect.js": "^4.16.6",
+    "dotenv": "^8.1.0",
+    "highlight.js": "^9.15.10",
+    "marked": "^0.7.0",
+    "nodemon": "^1.11.0",
+    "vuetify": "^2.0.19"
+  }
+}
