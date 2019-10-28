@@ -1,7 +1,9 @@
 <template>
-  <header>
-    <h1>
-        <a href="/">Static Blog</a>
-    </h1>
+  <header class="text-center">
+    <a class="font-weight-bold white--text display-1" 
+        style="text-decoration : none"
+        href="/">      
+        Static Blog      
+    </a>
   </header>
 </template>

@@ -1,26 +1,52 @@
 <template>
   <section>
-    <div>
-      <h1>Posts tagged with "{{ category }}"</h1>
+    <div class="my-5 tags container">
+
+      <div>        
+        <h1>
+          Posts tagged with "{{ category }}"
+        </h1>
+      </div>
+
       <ul>
-        <li v-for="(post, key) in posts" :key="key">
+        <li class="my-5" v-for="(post, key) in posts" :key="key">
+          <!-- Tag -->
           <div>
-            <a v-for="(tag, key) in post.tags" :key="key" :href="'/category/'+tag">{{ tag }}</a>
+            <a class="mx-1 pa-1 overline grey lighten-2"
+                style="border-radius : 4px; color : #448AFF; text-decoration: none"
+                v-for="(tag, key) in post.tags" 
+                :key="key" 
+                :href="'/category/'+tag">
+                  #{{ tag }}
+            </a>
+          </div>
+          
+          <!-- Title -->
+          <div class="my-2 headline font-weight-regular">
+            <a class="teal--text"
+                style="text-decoration: none"
+                :href="'/'+post.title_slug">
+                {{ post.title }}
+            </a>
           </div>
 
-          <a :href="'/'+post.title_slug">
-            <h2>
-              {{ post.title }}
-            </h2>
-          </a>
-
-          <div v-html="post.excerpt">
+          <!-- Excerpt -->
+          <div class="subtitle-2 font-weight-regular"
+               style=""
+                v-html="post.excerpt">
           </div>
-          <a :href="'/'+post.title_slug">
-            Read more
-          </a>
+
+          <!-- Title Slug -->
+          <div class="my-3 caption font-weight-regular">
+            <a style="color : #448AFF; text-decoration: none"
+                :href="'/'+post.title_slug">
+              Read more
+            </a>
+          </div>
+          
         </li>
       </ul>
+
     </div>
   </section>
 </template>

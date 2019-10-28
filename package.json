@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
+    "@nuxtjs/markdownit": "^1.2.7",
     "cross-env": "^5.2.0",
     "nuxt": "^2.9.2"
   },

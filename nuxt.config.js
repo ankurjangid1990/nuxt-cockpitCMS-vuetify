@@ -50,12 +50,20 @@ module.exports = {
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
+    // Markdown Module
+    '@nuxtjs/markdownit'
   ],
   /*
   ** Axios module configuration
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+  },
+  /*
+  ** Markdown module configuration
+  */ 
+  markdownit: {
+    injected: true
   },
 
   /*
