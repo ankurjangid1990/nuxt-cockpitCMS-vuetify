@@ -21,7 +21,7 @@
     "collect.js": "^4.16.6",
     "dotenv": "^8.1.0",
     "highlight.js": "^9.15.10",
-    "marked": "^0.7.0",
+    "marked": "^4.0.10",
     "nodemon": "^1.11.0",
     "vuetify": "^2.0.19"
   }
