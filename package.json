@@ -23,6 +23,6 @@
     "highlight.js": "^9.15.10",
     "marked": "^0.7.0",
     "nodemon": "^1.11.0",
-    "vuetify": "^2.0.19"
+    "vuetify": "^2.6.10"
   }
 }
